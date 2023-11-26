@@ -61,7 +61,7 @@ void BossFrogBomb::Update(float _DeltaTime)
 		CreateDustParticle();
 	}
 
-	GetTransform()->SetWorldPosition(float4::Bazier3LerpClamp(Startpoint, P2, Target, GetLiveTime()));
+	GetTransform()->SetWorldPosition(float4::Bezier3LerpClamp(Startpoint, P2, Target, GetLiveTime()));
 }
 
 

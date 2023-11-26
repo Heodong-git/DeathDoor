@@ -590,7 +590,7 @@ public:
 		return Lerp(Start, End, Ratio);
 	}
 
-	static float4 Bazier4Lerp(const float4& p1, const float4& p2, const float4& p3, const float4& p4, float Ratio)
+	static float4 Bezier4Lerp(const float4& p1, const float4& p2, const float4& p3, const float4& p4, float Ratio)
 	{
 		float4 a = float4::Lerp(p1, p2, Ratio);
 		float4 b = float4::Lerp(p2, p3, Ratio);
@@ -603,7 +603,7 @@ public:
 		return f;
 	}
 
-	static float4 Bazier4LerpClamp(const float4& p1, const float4& p2, const float4& p3, const float4& p4, float Ratio)
+	static float4 Bezier4LerpClamp(const float4& p1, const float4& p2, const float4& p3, const float4& p4, float Ratio)
 	{
 		if (0 >= Ratio)
 		{
@@ -614,10 +614,10 @@ public:
 			Ratio = 1.0f;
 		}
 
-		return Bazier4Lerp(p1, p2, p3, p4, Ratio);
+		return Bezier4Lerp(p1, p2, p3, p4, Ratio);
 	}
 	
-	static float4 Bazier3Lerp(const float4& p1, const float4& p2, const float4& p3, float Ratio)
+	static float4 Bezier3Lerp(const float4& p1, const float4& p2, const float4& p3, float Ratio)
 	{
 		float4 a = float4::Lerp(p1, p2, Ratio);
 		float4 b = float4::Lerp(p2, p3, Ratio);
@@ -627,7 +627,7 @@ public:
 		return d;
 	}
 
-	static float4 Bazier3LerpClamp(const float4& p1, const float4& p2, const float4& p3,float Ratio)
+	static float4 Bezier3LerpClamp(const float4& p1, const float4& p2, const float4& p3,float Ratio)
 	{
 		if (0 >= Ratio)
 		{
@@ -638,7 +638,7 @@ public:
 			Ratio = 1.0f;
 		}
 
-		return Bazier3Lerp(p1, p2, p3, Ratio);
+		return Bezier3Lerp(p1, p2, p3, Ratio);
 	}
 
 	operator DirectX::FXMVECTOR() const

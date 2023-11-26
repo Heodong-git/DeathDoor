@@ -31,6 +31,10 @@ void SkillSlot::Start()
 
 void SkillSlot::Update(float _DeltaTime)
 {
+	if (Player::MainPlayer == nullptr)
+	{
+		return;
+	}
 	CurSkill = Player::MainPlayer->GetPlayerSkill();
 
 	SkillChange();

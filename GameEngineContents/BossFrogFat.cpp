@@ -315,7 +315,7 @@ void BossFrogFat::SetFSMFUNC()
 
 			if (true == isJumpTime)
 			{
-				m_pCapsuleComp->SetWorldPosWithParent(float4::Bazier4LerpClamp(JumpStartPoint, JumpP2, JumpP3, JumpEndPoint, GetStateDuration()));
+				m_pCapsuleComp->SetWorldPosWithParent(float4::Bezier4LerpClamp(JumpStartPoint, JumpP2, JumpP3, JumpEndPoint, GetStateDuration()));
 			}
 			if (true == EnemyRenderer->IsAnimationEnd())
 			{
@@ -420,7 +420,7 @@ void BossFrogFat::SetFSMFUNC()
 			CheckHit();
 			if (true == isJumpTime)
 			{
-				m_pCapsuleComp->SetWorldPosWithParent(float4::Bazier4LerpClamp(JumpStartPoint, JumpP2, JumpP3, JumpEndPoint, GetStateDuration()));
+				m_pCapsuleComp->SetWorldPosWithParent(float4::Bezier4LerpClamp(JumpStartPoint, JumpP2, JumpP3, JumpEndPoint, GetStateDuration()));
 			}
 			if (true == EnemyRenderer->IsAnimationEnd())
 			{
@@ -450,7 +450,7 @@ void BossFrogFat::SetFSMFUNC()
 			CheckHit();
 			if (true == isJumpTime)
 			{
-				m_pCapsuleComp->SetWorldPosWithParent(float4::Bazier4LerpClamp(JumpStartPoint, JumpP2, JumpP3, JumpEndPoint, GetStateDuration()* 1.153846f));
+				m_pCapsuleComp->SetWorldPosWithParent(float4::Bezier4LerpClamp(JumpStartPoint, JumpP2, JumpP3, JumpEndPoint, GetStateDuration()* 1.153846f));
 			}
 			if (true == EnemyRenderer->IsAnimationEnd())
 			{
