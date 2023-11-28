@@ -132,10 +132,10 @@ void ShortCutDoor::SetFSMFUNC()
 			{
 			case StartState::OPEN:
 			{
-				m_sData.Type = InteractionData::InteractionDataType::Door;				
-				m_sData.Pos = m_pPhysXComponent->GetWorldPosition() + (GetTransform()->GetWorldBackVector() * 150.0f);
-				m_sData.Dir = GetTransform()->GetWorldBackVector();
-				Player::MainPlayer->GetInteractionData(m_sData);
+				//m_sData.Type = InteractionData::InteractionDataType::Door;				
+				//m_sData.Pos = m_pPhysXComponent->GetWorldPosition() + (GetTransform()->GetWorldBackVector() * 150.0f);
+				//m_sData.Dir = GetTransform()->GetWorldBackVector();
+				//Player::MainPlayer->GetInteractionData(m_sData);
 			}
 			break;
 			case StartState::CLOSE:

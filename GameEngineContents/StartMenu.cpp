@@ -53,7 +53,7 @@ void StartMenu::Update(float _DeltaTime)
 	{
 		if (0.0f >= m_fFadeTime)
 		{
-			GameEngineCore::ChangeLevel("OfficeLevel");
+			GameEngineCore::ChangeLevel("ExplainLevel");
 			return;
 		}
 

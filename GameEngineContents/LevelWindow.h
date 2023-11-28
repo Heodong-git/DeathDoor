@@ -23,7 +23,7 @@ private:
 	float m_fFrameTime = 0.f;
 	float m_fDeltaTime = 0.f;
 	float m_fFrameRate = 0.f;
-	std::string m_CurLevelName = "CenterLevel";
+	std::string m_CurLevelName = "";
 
 	std::string m_CurCameraMode = "Play Mode";
 };

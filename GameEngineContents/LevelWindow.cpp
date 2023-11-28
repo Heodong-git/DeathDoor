@@ -33,6 +33,10 @@ void LevelWindow::Start()
 
 void LevelWindow::OnGUI(std::shared_ptr<class GameEngineLevel> Level, float _DeltaTime)
 {
+	if (m_CurLevelName == "")
+	{
+		m_CurLevelName = GetLevel()->GetName();
+	}
 	m_fFrameTime += _DeltaTime;
 	if (m_fFrameTime >= 1.f)
 	{
